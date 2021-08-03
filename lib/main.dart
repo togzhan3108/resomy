@@ -1,13 +1,12 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:resomy_client/modules/core/screens/splash_screen.dart';
+import 'package:resomy_client/modules/system/screens/money_result.dart';
 import 'package:resomy_client/modules/system/screens/new_screen.dart';
 import 'package:resomy_client/modules/system/system_screen.dart';
 
 import 'core/helper/navigatable.dart';
 import 'core/routes/routes.dart';
+import 'modules/system/screens/money.dart';
 
 void main() {
   runApp(MyApp());
@@ -41,5 +40,7 @@ List<Navigatable> generateRoutes() {
     SplashScreen(),
     SystemScreen(),
     NewScreen(),
+    MoneyScreen(),
+    MoneyResult()
   ];
 }

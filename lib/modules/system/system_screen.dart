@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:resomy_client/core/helper/navigatable.dart';
 import 'package:resomy_client/core/routes/routes.dart';
-import 'package:resomy_client/modules/system/screens/categories_screen.dart';
-import 'package:resomy_client/modules/system/screens/home_screen.dart';
-import 'package:resomy_client/modules/system/screens/profile_screen.dart';
+import 'package:resomy_client/modules/system/screens/date_screen.dart';
+import 'package:resomy_client/modules/system/screens/person_info_screen.dart';
+import 'package:resomy_client/modules/system/screens/finance_screen.dart';
 
 class SystemScreen extends StatefulWidget implements Navigatable {
 
@@ -49,9 +49,9 @@ class _SystemScreenState extends State<SystemScreen> {
   }
 
   List<Widget> screens = [
-    HomeScreen(),
-    CategoriesScreen(),
-    ProfileScreen(),
+    PersonInfoScreen(),
+    DateScreen(),
+    FinanceScreen(),
   ];
 
   int selectedIndex = 0;
